@@ -1,4 +1,4 @@
-Download MSCOCO2017 train/val/test annotations from [data],ensure that the final directory structure under 'annotations' is as follows:
+Download MSCOCO2017 train/val/test annotations from [[data](https://cocodataset.org/#download)] ,ensure that the final directory structure under 'annotations' is as follows:
 ```  
 ${ROOT}  
 |-- data 

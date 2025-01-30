@@ -10,6 +10,16 @@ This repository is the offical Pytorch implementation of _Enhanced 2D Human Pose
 ## Introduction
 
 
+## Citation
+If you use our code or models in your research, please cite with:
+```
+@inproceedings{zhu2025FAHRNet,
+  title={Enhanced 2D Human Pose Estimation via Feature-Aligned High-Resolution Network},
+  author={Yuhe, Zhu and Zhangwen, Lyu and Rong, Liu and Yinwei, zhan},
+  booktitle={The Visual Computer},
+  year={2025}
+}
+```
 
 
 

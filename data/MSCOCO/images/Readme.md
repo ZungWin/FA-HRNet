@@ -4,7 +4,6 @@ Ensure that the final directory structure under 'images' is as follows:
 ```  
 ${ROOT}  
 |-- data 
-|
 |   |-- MSCOCO  
 |   |   |-- images  
 |   |   |   |-- train2017  

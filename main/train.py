@@ -13,7 +13,7 @@ def parse_args():
     parser.add_argument('--exp_dir', type=str, default='', help='for resuming train')
     parser.add_argument('--init_scale', type=float, default=1024., help='initial loss scale')
     parser.add_argument('--cfg', type=str, default='', help='experiment configure file name')
-    parser.add_argument('--dataset', type=str, default='', help='the dataset used in the experiment')
+
     args = parser.parse_args()
 
     if not args.gpu_ids:
@@ -31,7 +31,7 @@ def parse_args():
 def main():
     # argument parse and create log
     args = parse_args()
-    cfg.set_args(args.dataset, args.gpu_ids, args.continue_train, exp_dir=args.exp_dir)
+    cfg.set_args(args.gpu_ids, args.continue_train, exp_dir=args.exp_dir)
     cudnn.benchmark = True
     if args.cfg:
         cfg.update(args.cfg)

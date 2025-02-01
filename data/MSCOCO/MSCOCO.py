@@ -21,7 +21,6 @@ class MSCOCO(torch.utils.data.Dataset):
         self.data_split = data_split
         self.img_path = osp.join('..', 'data', 'MSCOCO', 'images')
         self.annot_path = osp.join('..', 'data', 'MSCOCO', 'annotations')
-        self.rootnet_output_path = osp.join('..', 'data', 'MSCOCO', 'rootnet_output', 'bbox_root_coco_output.json')
         self.fitting_thr = 3.0
         self.nms_thre = cfg.nms_thre
         self.image_thre = cfg.image_thre

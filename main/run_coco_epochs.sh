@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_FILE="test.log"
+LOG_FILE="test_coco.log"
 
 > $LOG_FILE
 

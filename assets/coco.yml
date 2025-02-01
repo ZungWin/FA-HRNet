@@ -1,0 +1,8 @@
+trainset_2d: ['MSCOCO']
+testset: 'MSCOCO'
+
+lr_dec_epoch: [50]
+end_epoch: 210
+lr: 0.001
+lr_backbone: 0.0001
+lr_dec_factor: 10

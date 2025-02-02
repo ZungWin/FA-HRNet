@@ -16,6 +16,43 @@ This repository is the offical Pytorch implementation of _Enhanced 2D Human Pose
 ## Quick start
 
 ### Enivornment installation
+1. Install pytorch >= v2.1.1 following [official instruction](https://pytorch.org/).
+
+2. Clone this repo, and we'll call the directory that you cloned as ${POSE_ROOT}.
+
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+4. Install [COCOAPI](https://github.com/cocodataset/cocoapi):
+   ```
+   # COCOAPI=/path/to/clone/cocoapi
+   git clone https://github.com/cocodataset/cocoapi.git $COCOAPI
+   cd $COCOAPI/PythonAPI
+   # Install into global site-packages
+   make install
+   # Alternatively, if you do not have permissions or prefer
+   # not to install the COCO API into global site-packages
+   python3 setup.py install --user
+   ```
+5. Init output(training model output directory):
+   
+   ```
+   mkdir output
+   ```
+   Your directory tree should look like this:
+
+   ```
+   ${POSE_ROOT}
+   ├── assets
+   ├── common
+   ├── data
+   ├── main
+   ├── output
+   ├── README.md
+   └── requirements.txt
+   ```
+6. Download pretrained models from our model zoo[provided after the publication of the paper]
 
 ## Citation
 If you use our code or models in your research, please cite with:

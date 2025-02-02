@@ -79,7 +79,24 @@ If you want to obtain the test results for each epoch, please run:
 ```
 ./run_coco_epochs.sh
 ```
- 
+
+#### Traing on MPII train dataset
+```
+python train.py --gpu 0 --cfg ../assets/mpii.yml 
+```
+
+#### Testing on MPII test dataset
+```
+python test.py --gpu 0 --cfg ../assets/mpii.yml  --exp_dir ../output/exp_{}-{}_{}:{} --test_epoch {}
+```
+
+After the code execution is completed, you will obtain the prediction file `pred.mat`. Finally, please follow the evaluation procedure provided on the website below to obtain the final evaluation metrics:
+
+[Website:](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/software-and-datasets/mpii-human-pose-dataset/evalution)
+
+This process will allow you to calculate the final evaluation results based on the `pred.mat` file.
+
+
 
 
 ## Citation

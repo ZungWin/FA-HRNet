@@ -54,6 +54,34 @@ This repository is the offical Pytorch implementation of _Enhanced 2D Human Pose
    ```
 6. Download pretrained models from our model zoo[provided after the publication of the paper]
 
+### Data preparation
+
+Please refer to the data folder for dataset downloads.
+
+### Training and Testing
+Make sure you are in the main folder.
+
+```
+cd ${POSE_ROOT/main}
+```
+
+#### Traing on COCO train2017 dataset
+```
+python train.py --gpu 0 --cfg ../assets/coco.yml 
+```
+
+#### Testing on COCO val2017 dataset
+```
+python test.py --gpu 0 --cfg ../assets/coco.yml  --exp_dir ../output/exp_{}-{}_{}:{} --test_epoch {}
+```
+
+If you want to obtain the test results for each epoch, please run:
+```
+./run_coco_epochs.sh
+```
+ 
+
+
 ## Citation
 If you use our code or models in your research, please cite with:
 ```
